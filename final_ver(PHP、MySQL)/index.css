@@ -1,0 +1,267 @@
+html,
+body {
+  height: 99vh;
+}
+
+.loginCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: block;
+  /* background: darkgoldenrod; */
+  width: 240px;
+  height: 280px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0px 1px 2px 1px #aaaaaa,
+    inset 0px 1px 1px rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: relative;
+  z-index: 100;
+}
+
+h1 {
+  text-align: center;
+  line-height: 5rem;.
+  font family: Helvetica;
+  color: white;
+}
+
+/* 外層容器&input樣式 */
+.inputDiv {
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-flow: column-reverse;
+  align-items: flex-start;
+  margin: 15px auto;
+}
+
+.inputDiv > input {
+  order: 10;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #d5d5d5;
+  text-indent: 10px;
+  line-height: 2rem;
+  /* background: transparent; */
+}
+
+/* 橫線動畫會依照placeholder做參照，這邊要保留文字，並讓透明度為0 */
+.inputDiv input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+/* 輸入文字觸發特效 */
+.inputDiv > input,
+.inputDiv > label {
+  transition: all 0.5s;
+}
+
+.inputDiv > label {
+  order: 100;
+  color: #908d99;
+  transform-origin: left bottom;
+  transform: translate(10px, 40px);
+}
+
+/* 設置底部橫線樣式 */
+.inputDiv .subLine {
+  order: 2;
+  width: 2;
+  height: 2px;
+  background: #9865b5;
+  transition: all 1s;
+}
+
+/* 設置底部橫線動畫 */
+.inputDiv > input:focus {
+  border-bottom-color: rgb(155, 73, 73);
+}
+
+.inputDiv > input:focus ~ div,
+.inputDiv > input:not(:placeholder-shown) ~ div {
+  width: 100%;
+}
+
+.inputDiv > input:focus + label,
+.inputDiv > input:not(:placeholder-shown) + label {
+  color: #ffffff;
+  transform: translate(10px) scale(0.9);
+}
+
+.button {
+  width: 80%;
+  border-radius: 5px;
+  display: block;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #9d63a3, #7c7283);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.frontPage {
+  background: linear-gradient(150deg, #9d63a3, #3b8d99);
+  width: 100%;
+  height: 100%;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bubbles > li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  /*氣泡預設大小*/
+  background: rgba(255, 255, 255, 0.2);
+  /*給氣泡20%的透明度*/
+  animation: animate 25s linear infinite;
+  /* animate = 動畫名稱 */
+  /* 25s = 動畫時間25秒 */
+  /* linear = 動畫開始至結束速度一致 */
+  /* infinite = 動畫無限次播放 */
+  bottom: -150px;
+}
+
+.bubbles > li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.bubbles > li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.bubbles > li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.bubbles > li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.bubbles > li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.bubbles > li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.bubbles > li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.bubbles > li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.bubbles > li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.bubbles > li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    /* translateY = Y軸位置 */
+    /* rotate = 旋轉角度 */
+    opacity: 1;
+    /* 透明度的參數可設定0.0(透明) ~ 1.0  (不透明) */
+    border-radius: 0;
+    /* 圓角 */
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    /* 氣泡由下往上移動至-1000px，旋轉720度 */
+    opacity: 0;
+    border-radius: 50%;
+    /* 產生圓角 */
+  }
+}

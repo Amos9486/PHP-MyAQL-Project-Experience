@@ -1,0 +1,9 @@
+a > i {
+  font-size: 1.5rem;
+}
+
+table,
+tr > th,
+tr > td {
+  border: 1px solid black;
+}

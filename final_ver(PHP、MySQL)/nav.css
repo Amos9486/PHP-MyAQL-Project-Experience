@@ -1,0 +1,101 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5A488C;
+    height: 8rem;
+    border-bottom: solid 4px #62868D;
+  }
+  .leftBox{
+    display: flex;
+    
+  }
+  
+  .leftBox img {
+    padding: 1rem 0;
+    width: 70% ;
+    display: flex;
+  }
+  
+  .leftBox1 {
+  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  .leftBox1 a {
+    display: block;
+    color: #85D4C0;
+    text-decoration: none;
+    font-size: 26px;
+    font family: Helvetica;
+    letter-spacing: 3px;
+  
+  
+  
+  }
+  
+  .middleBox {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+  }
+  
+  .middleBox-1 {
+    display: flex;
+    align-items: center;
+  
+    height: 100%;
+  
+  }
+  
+  .middleBox a {
+    line-height: 80px;
+    padding: 0 40px;
+    color: #DED4CF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 30px;
+    display: block;
+  
+  
+  
+  }
+  
+  .middleBox-1:hover {
+  
+    background-color: #806D9C;
+  
+  
+  }
+  
+  
+  
+  .middleBox-1:active {
+  
+    background-color: #9A68BA;
+    opacity: 1;
+  
+  }
+  
+  
+  .rightBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 80%;
+  }
+  
+  .rightBox a {
+    height: 80%;
+  }
+  
+  .icon-exit {
+    width: 2rem;
+    fill: #DED4CF;
+  }

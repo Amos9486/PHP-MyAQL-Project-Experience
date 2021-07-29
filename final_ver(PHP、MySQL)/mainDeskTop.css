@@ -1,0 +1,169 @@
+    body {
+
+      background-color: #B4BBC7;
+
+    }
+
+    .titlecolor {
+      background: linear-gradient(135deg, #9D63A3, #7C7283, #3b8d99);
+
+
+      border-bottom: solid #6A5694 5px;
+    }
+
+    .hh1 {
+
+      justify-content: center;
+      color: #333;
+      font family: Helvetica;
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      text-align: center;
+
+      letter-spacing: 1rem;
+      position: relative;
+    }
+
+
+
+    @keyframes spotlight {
+      0% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+      }
+
+      50% {
+        -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+        clip-path: ellipse(100px 100px at 100% 50%);
+
+      }
+
+      100% {
+        -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+        clip-path: ellipse(100px 100px at 0% 50%);
+      }
+    }
+
+   .tabh th {
+      border-right: solid 1px #655585;
+      border-left: solid 1px #655585;
+
+      background-color: #8470AE;
+      text-align: center;
+
+      color: whitesmoke;
+      font-size: 20px;
+
+      padding: 10px 30px;
+      white-space: nowrap;
+
+    }
+
+    .tabb td {
+      border: solid 1px #3D548A;
+      text-align: center;
+      padding: 10px 20px;
+      color: #757575;
+      white-space: nowrap;
+      background-color: whitesmoke;
+
+
+    }
+    .tblock a {
+      padding: 10px 0;
+      display: block;
+      width: 90px;
+      text-align: center;
+      margin-bottom: 5px;
+      
+      font-size: 20px;
+      color: white;
+
+      background: linear-gradient(135deg, #7C76B8, #3b8d99);
+      border-radius: 10px;
+    }
+    
+
+    .tblock {
+      margin-right: 5px;
+      display: flex;
+      width: 100px;
+      background-color: #3D547C;
+      border-radius: 10px;
+    }
+
+    .tblock a:hover {
+
+      background: linear-gradient(135deg, #EB72A8, #76CCB3);
+      opacity: 0.8;
+    }
+
+    .tblock a:active {
+
+      background: linear-gradient(135deg, #C46E95, #A358AD);
+      opacity: 0.8;
+
+    }
+
+    .ablock a {
+      padding: 10px 0;
+      display: block;
+      width: 300px;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 20px;
+      color: white;
+
+      background: linear-gradient(135deg, #7C76B8, #3b8d99);
+      border-radius: 10px;
+    }
+    
+
+    .ablock {
+      background-color: #3D547C;
+      border-radius: 10px;
+    }
+
+    .ablock a:hover {
+
+      background: linear-gradient(135deg, #EB72A8, #76CCB3);
+      opacity: 0.8;
+    }
+
+    .ablock a:active {
+
+      background: linear-gradient(135deg, #C46E95, #A358AD);
+      opacity: 0.8;
+
+    }
+
+    .td-block {
+      display: block;
+      margin-top: 20px;
+      width: 40px;
+      font-size: 20px;
+
+      display: flex;
+
+    }
+
+    .td-block a {
+
+      margin-right: 14px;
+      background-color: #7F7699;
+      padding: 5px 8px;
+      border-radius: 3px;
+      color: white;
+    }
+
+    .td-block a:hover {
+      background-color: green;
+      opacity: 0.3;
+    }
+
+    .td-block a:active {
+      background-color: #AB57A0;
+      opacity: 1;
+    }

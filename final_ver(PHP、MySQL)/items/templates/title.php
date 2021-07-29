@@ -1,0 +1,2 @@
+<!-- <h4>這裡是後端管理頁面</h4> -  -->
+<a class="btn btn-primary btn-lg active mx-2" role="button" aria-pressed="true" href="./admin.php">全部商品</a> | <a class="btn btn-primary btn-lg active mx-2" role="button" aria-pressed="true" href="./new.php"> 新增商品</a>
